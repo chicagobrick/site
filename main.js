@@ -8,9 +8,6 @@
 }
         
         
-   	$(".audioButton").click(function(){
-        console.log('cool');
-        playSong();
-}
-        );
+   	$(".audioButton").toggle(function (){playSong()},function () { pauseSong() });
+
     
