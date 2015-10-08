@@ -58,6 +58,28 @@
     
 <h1> hello web!</h1>
 
+<audio controls>
+  <source src="saint-pepsi-private-caller.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    
+    <button type="button" class="audioButton">Play/Pause Song</button>
+    
+    <script>
+    var song=$('audio');
+    
+        function playSong() {
+        song.play();
+        }
+        
+         function pauseSong() {
+        song.pause();
+        }
+    var button= $("audioButton");
+        button.toggle(playSong(), pauseSong());
+        
+    
+    </script>
     
 </body>
 </html>
