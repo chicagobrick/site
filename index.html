@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="jquery-1.11.3.min.js"></script>
-
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -58,31 +58,13 @@
     
 <h1> hello web!</h1>
 
-<audio>
-  <source src="saint-pepsi-private-caller.mp3" type="audio/mpeg" class="audio1">
+<audio src="saint-pepsi-private-caller.mp3" type="audio/mpeg" class="audio1">
 Your browser does not support the audio element.
 </audio>
     
     <button type="button" class="audioButton">Play/Pause Song</button>
     
-    <script>
-        var song=$(".audio1");
-        function playSong() { 
-            song.get(0).player.play(); 
-} 
-
-        function pauseSong() { 
-            song.get(0).player.pause(); 
-}
-        
-        
-   	$(".audioButton").click(function(){
-        console.log('cool');
-        playSong();
-}
-        );
     
-    </script>
     
 </body>
 </html>
