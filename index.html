@@ -68,11 +68,11 @@ Your browser does not support the audio element.
     <script>
         var song=$(".audio1");
         function playSong() { 
-            song.play(); 
+            song.get(0).play(); 
 } 
 
         function pauseSong() { 
-            song.pause(); 
+            song.get(0).pause(); 
 }
         
         
